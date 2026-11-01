@@ -25,7 +25,6 @@ export function WeatherContent ({ forecast }) {
                     {currentDay.hours.map((hour, idx) => {
                         return <div className={styles.hour} key={idx}>
                             <div className={styles.hourinner}>
-                                <span>icon</span>
                                 <span>{ hour.datetime.slice(0,5) }</span>
                                 <span>{ hour.temp }C</span> 
                                 <span>

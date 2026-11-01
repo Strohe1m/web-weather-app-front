@@ -126,29 +126,6 @@ export default function Weather () {
     )
 }
 
-/*
-<div className={styles.weatherContainerOuter}>
-            <div className={styles.weatherFormContainer}>
-                <form onSubmit={handleSubmit} className={styles.weatherForm}>
-                    <input 
-                    type="text" 
-                    placeholder="Enter your city..."
-                    value={city} 
-                    onChange={(e) => setCity(e.target.value)}
-                    name="city"
-                    id="city"
-                    />
-                    <button>
-                        <h1>
-                            see weather
-                        </h1>
-                    </button>
-                </form>
-            </div>
-            {weatherContent}
-        </div>
-*/
-
 
 function getWeatherPerDay ( days ) {
     return {    
