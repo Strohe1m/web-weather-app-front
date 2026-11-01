@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    background: linear-gradient(to right, #f6f7f9, #d8dfe7);
+    height: 100vh;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 1px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+

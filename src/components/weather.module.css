@@ -1,0 +1,113 @@
+
+.weatherOuter {
+    max-width: 1600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.search {
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 10px;
+    gap: 20px;
+    align-items: center;
+
+    h1 {
+        grid-column: span 2;
+    }
+
+    input {
+        border-radius: 50px;
+        border: none;
+        padding: 10px;
+    }
+
+    button {
+        border-radius: 50px;
+        border: none;
+        padding: 10px;
+        transition: background-color 0.3s;
+    }
+
+    button:hover {
+        background-color: black;
+        color: white;
+    }
+    
+}
+
+.overAllData {
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    background-color: #f1f2f7;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.159);
+
+    .todayWeather > * + * {
+        margin-top: 20px;
+        display: block;
+    }
+
+    .todayWeather div:first-child + div {
+        display: flex;
+    }
+
+    .todayWeather .currTemp {
+        display: inline-block;
+        
+    }
+
+    .todayWeatherOtherData {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
+
+}
+
+
+@media (max-width: 450px) {
+    .search h1 {
+        font-size: 1em;
+    }
+
+    .todayWeather {
+        
+        h3 {
+            display: inline;
+        }
+
+        & span:first-child {
+            display: unset;
+            margin-left: 20px;
+        }
+
+    }
+}
+
+@media (max-width: 650px) {
+    
+    .todayWeatherOtherData {
+        width: 100%;
+        flex-direction: row !important;
+
+    }
+
+}
